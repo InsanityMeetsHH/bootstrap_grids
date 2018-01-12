@@ -16,13 +16,13 @@ lib.bootstrap_grids {
         wrap = <div class="row">|</div>
         columns {
             101 < .default
-            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col21class}">|</div>
+            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_xlCol1} {field:flexform_col21class}">|</div>
             # override if none set (supporting drag&drop)
             101.dataWrap.override = <div class="col-md-6">|</div>
             101.dataWrap.override.if.isNull.field = flexform_mdCol1
             101.wrap >
             102 < .101
-            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col22class}">|</div>
+            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_xlCol2} {field:flexform_col22class}">|</div>
             102.dataWrap.override = <div class="col-md-6">|</div>
             102.dataWrap.override.if.isNull.field = flexform_mdCol2
         }
@@ -30,12 +30,12 @@ lib.bootstrap_grids {
     3cols < .2cols
     3cols {
         columns {
-            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col31class}">|</div>
+            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_xlCol1} {field:flexform_col31class}">|</div>
             101.dataWrap.override = <div class="col-md-4">|</div>
-            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col32class}">|</div>
+            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_xlCol2} {field:flexform_col32class}">|</div>
             102.dataWrap.override = <div class="col-md-4">|</div>
             103 < .101
-            103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col33class}">|</div>
+            103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_xlCol3} {field:flexform_col33class}">|</div>
             103.dataWrap.override = <div class="col-md-4">|</div>
             102.dataWrap.override.if.isNull.field = flexform_mdCol3
         }
@@ -43,14 +43,14 @@ lib.bootstrap_grids {
     4cols < .3cols
     4cols {
         columns {
-            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_col41class}">|</div>
+            101.dataWrap = <div class="{field:flexform_xsCol1} {field:flexform_smCol1} {field:flexform_mdCol1} {field:flexform_lgCol1} {field:flexform_xlCol1} {field:flexform_col41class}">|</div>
             101.dataWrap.override = <div class="col-md-3">|</div>
-            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_col42class}">|</div>
+            102.dataWrap = <div class="{field:flexform_xsCol2} {field:flexform_smCol2} {field:flexform_mdCol2} {field:flexform_lgCol2} {field:flexform_xlCol2} {field:flexform_col42class}">|</div>
             102.dataWrap.override = <div class="col-md-3">|</div>
-            103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_col43class}">|</div>
+            103.dataWrap = <div class="{field:flexform_xsCol3} {field:flexform_smCol3} {field:flexform_mdCol3} {field:flexform_lgCol3} {field:flexform_xlCol3} {field:flexform_col43class}">|</div>
             103.dataWrap.override = <div class="col-md-3">|</div>
             104 < .101
-            104.dataWrap = <div class="{field:flexform_xsCol4} {field:flexform_smCol4} {field:flexform_mdCol4} {field:flexform_lgCol4} {field:flexform_col44class}">|</div>
+            104.dataWrap = <div class="{field:flexform_xsCol4} {field:flexform_smCol4} {field:flexform_mdCol4} {field:flexform_lgCol4} {field:flexform_xlCol4} {field:flexform_col44class}">|</div>
             104.dataWrap.override = <div class="col-md-3">|</div>
             104.dataWrap.override.if.isNull.field = flexform_mdCol4
         }
@@ -209,7 +209,10 @@ lib.bootstrap_grids {
         outerWrap.stdWrap.cObject {
             key.field = flexform_rowclass
             default = TEXT
-            default.value = <div class="panel-group" id="accordion-{field:_LOCALIZED_UID//field:uid}">|</div>
+            default.value (
+            <div class="frame frame-{field:frame_class} frame-type-{field:CType} frame-layout-{field:layout} frame-space-before-{field:space_before_class} frame-space-after-{field:space_after_class}">
+                <div role="tablist" class="accordion" id="accordion-{field:_LOCALIZED_UID//field:uid}">|</div></div>
+            )
             #acc = TEXT
             #acc.value = <div class="tabs"><div class="accordion" id="accordion-{field:_LOCALIZED_UID//field:uid}">|</div></div>
         }
@@ -219,7 +222,7 @@ lib.bootstrap_grids {
             101 < .default
             101 {
                 renderObj {
-                    stdWrap.outerWrap = <div class="panel panel-default">|</div>
+                    stdWrap.outerWrap = <div class="card card-default">|</div>
 
                     # thanks to Josef Körner (brandical.de) for simplification
                     5 = LOAD_REGISTER
@@ -233,8 +236,24 @@ lib.bootstrap_grids {
                     10 {
                         field = header
                         insertData = 1
-                        wrap          = <div class="panel-heading"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse-{field:uid}" aria-expanded="false" aria-controls="collapse-{field:uid}" class="collapsed accordion-toggle">|</a></h4></div><div id="collapse-{field:uid}" class="panel-collapse collapse" role="tabpanel"><div class="panel-body">
-                        wrap.override = <div class="panel-heading"><h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse-{field:uid}" aria-expanded="true" aria-controls="collapse-{field:uid}" class="accordion-toggle">|</a></h4></div><div id="collapse-{field:uid}" class="panel-collapse collapse in" role="tabpanel"><div class="panel-body">
+                        wrap (
+                            <div class="card-header" role="tab">
+                                <h4>
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse{field:uid}" aria-expanded="false" aria-controls="collapse-{field:uid}" class="collapsed accordion-toggle">|</a>
+                                </h4>
+                            </div>
+                            <div id="collapse{field:uid}" aria-labelledby="heading{field:uid}" class="collapse" role="tabpanel">
+                                <div class="card-body">
+                        )
+                        wrap.override (
+                            <div class="card-header" role="tab">
+                                <h4>
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse{field:uid}" aria-expanded="true" aria-controls="collapse-{field:uid}" class="accordion-toggle">|</a>
+                                </h4>
+                            </div>
+                            <div id="collapse{field:uid}" aria-labelledby="heading{field:uid}" class="collapse in" role="tabpanel">
+                                <div class="card-body">
+                        )
                         wrap.override.if.value = 1
                         wrap.override.if.equals.data = register:AccordionCount
                     }
