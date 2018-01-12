@@ -194,7 +194,7 @@ tx_gridelements {
             description = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:accordion.description
             iconIdentifier = tx-bootstrapgrids-accordion
             frame = 2
-            topLevelLayout = s
+            topLevelLayout = 0
             config {
                 colCount = 1
                 rowCount = 1

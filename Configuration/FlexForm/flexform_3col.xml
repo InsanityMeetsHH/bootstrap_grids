@@ -191,6 +191,16 @@
                             </config>
                         </TCEforms>
                     </xlCol2>
+                    <xlCol3 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col3</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getThreeColumnOptions</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </xlCol3>
                 </el>
             </ROOT>
         </extralargeDevices>

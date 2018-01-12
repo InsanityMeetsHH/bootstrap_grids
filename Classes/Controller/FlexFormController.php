@@ -138,8 +138,8 @@ class FlexFormController {
                                     array('91.7% (col-11)', 'col-11'),
                                     array('100% (col-12)', 'col-12'),
                                     array('LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.moreOptions', '--div--'),
-                                    array('LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden', 'd-sm-none'),
-                                    array('LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible', 'd-sm-block'));
+                                    array('LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.hidden', 'd-xs-none'),
+                                    array('LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.visible', 'd-xs-block'));
                 break;
 
             // large

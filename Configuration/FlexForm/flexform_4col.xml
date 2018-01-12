@@ -231,6 +231,26 @@
                             </config>
                         </TCEforms>
                     </xlCol2>
+                    <xlCol3 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col3</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </xlCol3>
+                    <xlCol4 type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.label.col4</label>
+                            <config type="array">
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <itemsProcFunc>Laxap\BootstrapGrids\Controller\FlexFormController->getFourColumnOptions</itemsProcFunc>
+                            </config>
+                        </TCEforms>
+                    </xlCol4>
                 </el>
             </ROOT>
         </extralargeDevices>
