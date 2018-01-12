@@ -252,7 +252,7 @@ lib.bootstrap_grids {
                         wrap.override (
                             <div class="card-header" role="tab">
                                 <h4>
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse{field:uid}" aria-expanded="true" aria-controls="collapse-{field:uid}" class="accordion-toggle">|</a>
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse{field:uid}" aria-expanded="true" aria-controls="collapse-{field:uid}" class="collapsed accordion-toggle">|</a>
                                 </h4>
                             </div>
                             <div id="collapse{field:uid}" aria-labelledby="heading{field:uid}" class="collapse in" role="tabpanel">
