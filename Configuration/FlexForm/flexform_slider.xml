@@ -54,7 +54,7 @@
                                 <items type="array">
                                     <numIndex index="0" type="array">
                                         <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.slider.animation.1</numIndex>
-                                        <numIndex index="1">fade</numIndex>
+                                        <numIndex index="1">carousel-fade</numIndex>
                                     </numIndex>
                                     <numIndex index="1" type="array">
                                         <numIndex index="0">LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:grid.slider.animation.2</numIndex>
