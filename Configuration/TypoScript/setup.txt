@@ -242,18 +242,18 @@ lib.bootstrap_grids {
                         insertData = 1
                         wrap (
                             <div class="card-header" role="tab">
-                                <h4>
+                                <h3>
                                     <a role="button" data-toggle="collapse" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse{field:uid}" aria-expanded="false" aria-controls="collapse-{field:uid}" class="collapsed accordion-toggle">|</a>
-                                </h4>
+                                </h3>
                             </div>
                             <div id="collapse{field:uid}" aria-labelledby="heading{field:uid}" class="collapse" role="tabpanel">
                                 <div class="card-body">
                         )
                         wrap.override (
                             <div class="card-header" role="tab">
-                                <h4>
+                                <h3>
                                     <a role="button" data-toggle="collapse" data-parent="#accordion-{field:tx_gridelements_container}" href="#collapse{field:uid}" aria-expanded="true" aria-controls="collapse-{field:uid}" class="collapsed accordion-toggle">|</a>
-                                </h4>
+                                </h3>
                             </div>
                             <div id="collapse{field:uid}" aria-labelledby="heading{field:uid}" class="collapse in" role="tabpanel">
                                 <div class="card-body">
