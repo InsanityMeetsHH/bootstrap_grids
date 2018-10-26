@@ -1,4 +1,4 @@
-# TYPO3 Extension "bootstrap_grids"
+# TYPO3 Extension "bootstrap_grids" for Bootstrap 4
 
 Predefined gridelements for bootstrap: Column grids, grids for simple accordions, tabs and content slider.
 

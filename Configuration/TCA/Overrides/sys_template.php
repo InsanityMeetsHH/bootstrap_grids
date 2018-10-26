@@ -3,5 +3,5 @@
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     'bootstrap_grids',
     'Configuration/TypoScript',
-    'Grids for Bootstrap'
+    'Grids for Bootstrap 4'
 );

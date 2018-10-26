@@ -11,8 +11,8 @@ tx_gridelements {
                 colCount = 1
                 rowCount = 1
                 rows.1.columns.1 {
-					name = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:celayout.columnElements
-					colPos = 111
+                    name = LLL:EXT:bootstrap_grids/Resources/Private/Language/locallang_db.xlf:celayout.columnElements
+                    colPos = 111
                 }
             }
             #flexformDS = FILE:EXT:bootstrap_grids/Configuration/FlexForm/flexform_...
